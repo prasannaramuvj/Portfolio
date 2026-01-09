@@ -1,0 +1,58 @@
+@media screen and (max-width: 1024px) {
+    .services {
+        margin: 80px 80px;
+        gap: 60px;
+    }
+
+    .services-title h1 {
+        font-size: 70px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .services-format {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        gap: 50px;
+        margin: 50px 30px;
+    }
+
+    .services-title h1 {
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .services-title img {
+        width: 130px;
+        right: -20px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        /* Single column */
+        gap: 30px;
+    }
+
+    .services-format {
+        gap: 15px;
+        padding: 30px;
+        /* Reduce padding */
+    }
+
+    .services-format h2 {
+        font-size: 26px;
+    }
+
+    .services-format p {
+        font-size: 18px;
+        max-width: 100%;
+        /* Allow full width */
+    }
+}

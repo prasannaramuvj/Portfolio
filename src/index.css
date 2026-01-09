@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #0a0a0a;
+  --text-color: #ededed;
+  --text-secondary: #a3a3a3;
+  --accent-color: #3B82F6;
+  --card-bg: #171717;
+  --card-border: #262626;
+  --nav-bg: #171717;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'outfit';
+}
+
+@media (max-width:340px) {
+  .theme-pallete {
+    display: none;
+  }
+}

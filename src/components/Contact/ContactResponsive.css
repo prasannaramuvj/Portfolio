@@ -1,0 +1,88 @@
+@media screen and (max-width: 1024px) {
+    .contact {
+        margin: 80px 80px;
+        gap: 60px;
+    }
+
+    .contact-title h1 {
+        font-size: 70px;
+    }
+
+    .contact-section {
+        gap: 80px;
+    }
+
+    .contact-left h1 {
+        font-size: 60px;
+    }
+
+    .contact-right input {
+        width: 100%;
+    }
+
+    .contact-right textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        gap: 50px;
+        margin: 50px 30px;
+    }
+
+    .contact-title h1 {
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .contact-title img {
+        width: 130px;
+        right: -20px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact-left h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .contact-left p {
+        font-size: 18px;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .contacts-details {
+        gap: 25px;
+    }
+
+    .contact-detail {
+        gap: 15px;
+    }
+
+    .contact-right {
+        align-items: stretch;
+        /* Make inputs stretch */
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        width: 100%;
+        /* Full width */
+        font-size: 18px;
+        box-sizing: border-box;
+        /* Include padding in width */
+    }
+
+    .contact-submit {
+        font-size: 20px;
+        padding: 15px 40px;
+        align-self: center;
+        /* Center the button */
+    }
+}

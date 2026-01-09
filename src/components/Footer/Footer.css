@@ -1,0 +1,10 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-top{
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}

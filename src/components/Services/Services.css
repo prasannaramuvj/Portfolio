@@ -1,0 +1,134 @@
+.services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+.services-title {
+  position: relative;
+}
+
+.services-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.services-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.services-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  background: var(--card-bg);
+  /* Dark background to match theme */
+  overflow: hidden;
+  transition: 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* The spinning glow effect */
+.services-format::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(transparent, transparent, transparent, #DF8908, #B415FF);
+  animation: rotate 4s linear infinite;
+  z-index: -2;
+}
+
+/* The inner card background */
+.services-format::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  /* Border width */
+  background: var(--card-bg);
+  /* Match card bg */
+  border-radius: 8px;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.services-format:hover::after {
+  background-image: linear-gradient(45deg, #aeb3b7, #bbd6dc);
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+
+}
+
+.services-format h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.services-format h2 {
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-format p {
+  color: var(--text-secondary);
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 300px;
+}
+
+.services-readmore {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.services-format:hover {
+
+  transform: scale(1.05);
+  transition: 0.4s;
+  color: black
+}
+
+.services-format p:hover {
+  color: black;
+}
+
+.services-image {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
