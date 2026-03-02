@@ -45,7 +45,7 @@ const Navbar = () => {
            <span className='icon'><FaGithubSquare size={30} /></span></a>
         </div>
       </div>
-
+      
     </div>
   )
 }

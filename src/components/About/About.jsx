@@ -1,7 +1,7 @@
 import './About.css'
 import './AboutResponsive.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import profile_img from '../../assets/about_profile.svg'
+import profile_img from '../../assets/profile_img.jpg'
 
 const About = () => {
   return (

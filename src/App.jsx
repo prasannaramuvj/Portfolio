@@ -21,6 +21,7 @@ const App = () => {
       <Mywork />
       <Experience/>
       <Contact />
+      {/* <Navbar/> */}
       <Footer />
 
       <ToastContainer />
