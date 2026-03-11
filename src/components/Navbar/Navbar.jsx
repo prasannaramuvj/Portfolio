@@ -27,9 +27,18 @@ const Navbar = () => {
 
       <ul className="nav-menu" ref={menuRef}>
         <img src={menu_close} alt="menu-close-icon" className='nav-mob-close' onClick={closeMenu} />
-        <li><AnchorLink className='anchor-link' offset={50} href="#home"><p onClick={() => setMenu('home')}>Home</p></AnchorLink>{menu === "home" ? <span className="nav-underline" /> : null}</li>
-        <li><AnchorLink className='anchor-link' offset={50} href="#about"><p onClick={() => setMenu('about')} >About-me</p></AnchorLink>{menu === "about" ? <span className="nav-underline" /> : null}</li>
-        <li><AnchorLink className='anchor-link' offset={50} href="#services"><p onClick={() => setMenu('services')}>Services</p></AnchorLink>{menu === "services" ? <span className="nav-underline" /> : null}</li>
+
+        <li>
+          <AnchorLink className='anchor-link' offset={50} href="#home"><p onClick={() => setMenu('home')}>Home</p></AnchorLink>{menu === "home" ? <span className="nav-underline" /> : null}
+        </li>
+        <li>
+          <AnchorLink className='anchor-link' offset={50} href="#about"><p onClick={() => setMenu('about')} >About-me</p>
+          </AnchorLink>{menu === "about" ? <span className="nav-underline" /> : null}
+        </li>
+        <li><AnchorLink className='anchor-link' offset={50} href="#services">
+          <p onClick={() => setMenu('services')}>Services</p></AnchorLink>{menu === "services" ? <span className="nav-underline" 
+          /> : null}
+          </li>
         <li><AnchorLink className='anchor-link' offset={50} href="#work"><p onClick={() => setMenu('portfolio')}>Portfolio</p></AnchorLink>{menu === "portfolio" ? <span className="nav-underline" /> : null}</li>
         <li><AnchorLink className='anchor-link' offset={50} href="#experience"><p onClick={() => setMenu('experience')}>Experience</p></AnchorLink>{menu === "experience" ? <span className="nav-underline" /> : null}</li>
         <li><AnchorLink className='anchor-link' offset={50} href="#contact"><p onClick={() => setMenu('contact')}>Contact</p></AnchorLink>{menu === "contact" ? <span className="nav-underline" /> : null}</li>
